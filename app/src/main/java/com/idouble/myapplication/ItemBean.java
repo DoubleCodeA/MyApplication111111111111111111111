@@ -12,12 +12,23 @@ public class ItemBean {
 
     private String itemContent;
 
-    public ItemBean(int itemImage, String itemTitle, String itemContent){
+    private String num;
+
+    public ItemBean(int itemImage, String itemTitle, String itemContent,String num){
 
         this.itemImage = itemImage;
         this.itemTitle = itemTitle;
         this.itemContent = itemContent;
+        this.num = num;
 
+    }
+
+    public String getNum() {
+        return num;
+    }
+
+    public void setNum(String num) {
+        this.num = num;
     }
 
     public int getItemImage() {
